@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo WebRTC per Sistemi per la Collaborazione in Rete</title>
+		<link type="text/css" rel="stylesheet" href="./css/stile.css">
+	</head>
+	<body>
+		<h1 class="titolo">Demo WebRTC per Sistemi per la Collaborazione in Rete</h1>
+		<div id="centrale">
+		<video id="webrtc-remotevid" autoplay ></video>
+		<video id="webrtc-sourcevid" autoplay ></video>
+		</div>
+
+		<div id="centrale">
+		<p>		
+		<button id="avviaVideo" type="button" onclick="startVideo();">
+			Avvia video
+		</button>
+		<button id="fermaVideo" type="button" onclick="stopVideo();" disabled>
+			Ferma video
+		</button>
+
+		&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<button id="avviaChiamata" type="button" onclick="connect();">
+			Avvia chiamata
+		</button>
+		<button id="fermaChiamata" type="button" onclick="chiudi();" disabled>
+			Chiudi chiamata
+		</button>
+		</p>
+		</div>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="./js/codice.js"></script>
+	</body>
+</html>
